@@ -12,6 +12,30 @@
         <script type="text/javascript">
 
           document.addEventListener('DOMContentLoaded', function() {
+            
+            // Will redirect to Tesla-Clone Demo
+            document.getElementById("teslaProjectDemo").onclick = function () {
+              //location.href = "https://felixt24.github.io/Tesla-Clone/";
+              window.open("https://felixt24.github.io/Tesla-Clone/", "_blank");
+            };
+
+            // Will redirect to Tesla-Clone Repository
+            document.getElementById("teslaProjectCode").onclick = function () {
+              //location.href = "https://github.com/FelixT24/Tesla-Clone";
+              window.open("https://github.com/FelixT24/Tesla-Clone", "_blank");
+            };
+
+            // Will redirect to SpaceX-Clone Demo
+            document.getElementById("spaceProjectDemo").onclick = function () {
+              //location.href = "https://felixt24.github.io/SpaceX-Clone/";
+              window.open("https://felixt24.github.io/SpaceX-Clone/", "_blank");
+            };
+
+            // Will redirect to SpaceX-Clone Repository
+            document.getElementById("spaceProjectCode").onclick = function () {
+              //location.href = "https://github.com/FelixT24/SpaceX-Clone";
+              window.open("https://github.com/FelixT24/SpaceX-Clone", "_blank");
+            };
 
             // Will redirect to Netflix_Subscriptions Repository
             document.getElementById("subProject").onclick = function () {
@@ -26,7 +50,7 @@
 
             // Will redirect to PortfolioProject Repository 
             document.getElementById("portProject").onclick = function () {
-                window.open("https://github.com/FelixT24/felixt24.github.io", "_blank");
+                window.open("https://github.com/FelixT24/LibrarySys", "_blank");
               };
 
           });
@@ -51,13 +75,13 @@
                 <nav>
                     <ul class="nav nav-pills">
                         <li class="nav-item">
-                            <a class="nav-link" href="/index.html">Home</a>
+                            <a class="nav-link" href="/boostrap/index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/about.html">About Me</a>
+                            <a class="nav-link" href="/boostrap/about.html">About Me</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="/portfolio.html">Portfolio</a>
+                            <a class="nav-link active" aria-current="page" href="/boostrap/portfolio.html">Portfolio</a>
                         </li>
                         <!-- NOT SURE 
                         <li>
@@ -169,10 +193,46 @@
                     </div>
                   </div>
             -->
-                  <!--Project #1-->
+
+
+                  <!-- Project 1-->
                   <div class="col-md-4">
                     <div class="card mb-4 box-shadow">
-                      <img class="card-img-top" src="./Pictures/portfolio_page.png" alt="Portfolio Home Page">
+                      <img class="card-img-top" src="/boostrap/Pictures/SpaceX-Clone.png" alt="SpaceX Clone Page">
+                      <div class="card-body">
+                        <p class="card-text">A clone of the SpaceX landing page showcasing my ability to utilize HTML and CSS. <br> <br>
+                                            <strong>Technologies Used:</strong> &nbsp; HTML, CSS</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div class="btn-group">
+                            <button id="spaceProjectDemo" type="button" class="btn btn-sm btn-outline-secondary submit-button">Live Demo</button>
+                            <button id="spaceProjectCode" type="button" class="btn btn-sm btn-outline-secondary submit-button">Source Code</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Project 2-->
+                  <div class="col-md-4">
+                    <div class="card mb-4 box-shadow">
+                      <img class="card-img-top" src="/boostrap/Pictures/Tesla-Clone.png" alt="Tesla Clone Page">
+                      <div class="card-body">
+                        <p class="card-text">A clone of the Tesla landing page showcasing my ability to utilize various front-end technologies. <br> <br>
+                                            <strong>Technologies Used:</strong> &nbsp; HTML, CSS, JavaScript</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div class="btn-group">
+                            <button id="teslaProjectDemo" type="button" class="btn btn-sm btn-outline-secondary submit-button">Live Demo</button>
+                            <button id="teslaProjectCode" type="button" class="btn btn-sm btn-outline-secondary submit-button">Source Code</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!--Project 3-->
+                  <div class="col-md-4">
+                    <div class="card mb-4 box-shadow">
+                      <img class="card-img-top" src="/boostrap/Pictures/portfolio_page.png" alt="Portfolio Home Page">
                       <div class="card-body">
                         <p class="card-text">This portfolio website in itself was a project that utilized several different technologies in order 
                                              to showcase my capabilities as a developer amongst giving more insight on my technical background/education. <br> <br>
@@ -186,10 +246,10 @@
                     </div>
                   </div>
                   
-                  <!--Project #2-->
+                  <!--Project 4-->
                   <div class="col-md-4">
                     <div class="card mb-4 box-shadow">
-                      <img class="card-img-top" src="./Pictures/libsys.png" alt="Screenshot of Library Application">
+                      <img class="card-img-top" src="/boostrap/Pictures/libsys.png" alt="Screenshot of Library Application">
                       <div class="card-body">
                         <p class="card-text">This is a Java project that utilizes file handling to read available books from a text file, 
                                             allowing users to conveniently manage their library by returning overdue books, checking out books, and browsing the available book collection. <br> <br>
@@ -203,10 +263,10 @@
                     </div>
                   </div>
 
-                  <!--Project #3-->
+                  <!--Project 5-->
                   <div class="col-md-4">
                     <div class="card mb-4 box-shadow">
-                      <img class="card-img-top" src="./Pictures/netflix_sub_page.png" alt="The landing page for the subscriptions">
+                      <img class="card-img-top" src="/boostrap/Pictures/netflix_sub_page.png" alt="Card image cap">
                       <div class="card-body">
                         <p class="card-text">This was a small project to see if I could create a re-imagined Netflix subscriptions page. <br> <br>
                         <strong>Technology Used:</strong> &nbsp; HTML, CSS</p>
@@ -230,13 +290,13 @@
                 <nav>
                     <ul class="nav nav-pills">
                         <li class="nav-item">
-                            <a class="nav-link" href="/index.html">Home</a>
+                            <a class="nav-link" href="/boostrap/index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/about.html">About Me</a>
+                            <a class="nav-link" href="/boostrap/about.html">About Me</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page"  href="/portfolio.html">Portfolio</a>
+                            <a class="nav-link active" aria-current="page"  href="/boostrap/portfolio.html">Portfolio</a>
                         </li>
                         <!-- NOT SURE 
                         <li>
